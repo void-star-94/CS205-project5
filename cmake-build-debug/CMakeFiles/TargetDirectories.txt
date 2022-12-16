@@ -1,0 +1,3 @@
+/home/void-star/CLionProjects/project5/cmake-build-debug/CMakeFiles/project5.dir
+/home/void-star/CLionProjects/project5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/void-star/CLionProjects/project5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
