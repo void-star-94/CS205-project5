@@ -1,4 +1,4 @@
-# Install script for directory: /home/void-star/CLionProjects/project5
+# Install script for directory: /home/zhzhzh/ClionProjects/CS205-project5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/void-star/CLionProjects/project5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

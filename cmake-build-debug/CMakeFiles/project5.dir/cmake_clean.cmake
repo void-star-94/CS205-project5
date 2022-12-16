@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/project5.dir/src/Matrix.cpp.o"
-  "CMakeFiles/project5.dir/src/Matrix.cpp.o.d"
   "CMakeFiles/project5.dir/src/main.cpp.o"
   "CMakeFiles/project5.dir/src/main.cpp.o.d"
   "project5"

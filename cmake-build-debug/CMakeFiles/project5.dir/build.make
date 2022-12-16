@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/void-star/CLionProjects/project5
+CMAKE_SOURCE_DIR = /home/zhzhzh/ClionProjects/CS205-project5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/void-star/CLionProjects/project5/cmake-build-debug
+CMAKE_BINARY_DIR = /home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project5.dir/depend.make
@@ -69,47 +69,31 @@ include CMakeFiles/project5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project5.dir/flags.make
 
-CMakeFiles/project5.dir/src/Matrix.cpp.o: CMakeFiles/project5.dir/flags.make
-CMakeFiles/project5.dir/src/Matrix.cpp.o: /home/void-star/CLionProjects/project5/src/Matrix.cpp
-CMakeFiles/project5.dir/src/Matrix.cpp.o: CMakeFiles/project5.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/void-star/CLionProjects/project5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project5.dir/src/Matrix.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project5.dir/src/Matrix.cpp.o -MF CMakeFiles/project5.dir/src/Matrix.cpp.o.d -o CMakeFiles/project5.dir/src/Matrix.cpp.o -c /home/void-star/CLionProjects/project5/src/Matrix.cpp
-
-CMakeFiles/project5.dir/src/Matrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project5.dir/src/Matrix.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/void-star/CLionProjects/project5/src/Matrix.cpp > CMakeFiles/project5.dir/src/Matrix.cpp.i
-
-CMakeFiles/project5.dir/src/Matrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project5.dir/src/Matrix.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/void-star/CLionProjects/project5/src/Matrix.cpp -o CMakeFiles/project5.dir/src/Matrix.cpp.s
-
 CMakeFiles/project5.dir/src/main.cpp.o: CMakeFiles/project5.dir/flags.make
-CMakeFiles/project5.dir/src/main.cpp.o: /home/void-star/CLionProjects/project5/src/main.cpp
+CMakeFiles/project5.dir/src/main.cpp.o: /home/zhzhzh/ClionProjects/CS205-project5/src/main.cpp
 CMakeFiles/project5.dir/src/main.cpp.o: CMakeFiles/project5.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/void-star/CLionProjects/project5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project5.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project5.dir/src/main.cpp.o -MF CMakeFiles/project5.dir/src/main.cpp.o.d -o CMakeFiles/project5.dir/src/main.cpp.o -c /home/void-star/CLionProjects/project5/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project5.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project5.dir/src/main.cpp.o -MF CMakeFiles/project5.dir/src/main.cpp.o.d -o CMakeFiles/project5.dir/src/main.cpp.o -c /home/zhzhzh/ClionProjects/CS205-project5/src/main.cpp
 
 CMakeFiles/project5.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project5.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/void-star/CLionProjects/project5/src/main.cpp > CMakeFiles/project5.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhzhzh/ClionProjects/CS205-project5/src/main.cpp > CMakeFiles/project5.dir/src/main.cpp.i
 
 CMakeFiles/project5.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project5.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/void-star/CLionProjects/project5/src/main.cpp -o CMakeFiles/project5.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhzhzh/ClionProjects/CS205-project5/src/main.cpp -o CMakeFiles/project5.dir/src/main.cpp.s
 
 # Object files for target project5
 project5_OBJECTS = \
-"CMakeFiles/project5.dir/src/Matrix.cpp.o" \
 "CMakeFiles/project5.dir/src/main.cpp.o"
 
 # External object files for target project5
 project5_EXTERNAL_OBJECTS =
 
-project5: CMakeFiles/project5.dir/src/Matrix.cpp.o
 project5: CMakeFiles/project5.dir/src/main.cpp.o
 project5: CMakeFiles/project5.dir/build.make
 project5: CMakeFiles/project5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/void-star/CLionProjects/project5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable project5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable project5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +105,6 @@ CMakeFiles/project5.dir/clean:
 .PHONY : CMakeFiles/project5.dir/clean
 
 CMakeFiles/project5.dir/depend:
-	cd /home/void-star/CLionProjects/project5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/void-star/CLionProjects/project5 /home/void-star/CLionProjects/project5 /home/void-star/CLionProjects/project5/cmake-build-debug /home/void-star/CLionProjects/project5/cmake-build-debug /home/void-star/CLionProjects/project5/cmake-build-debug/CMakeFiles/project5.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhzhzh/ClionProjects/CS205-project5 /home/zhzhzh/ClionProjects/CS205-project5 /home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug /home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug /home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug/CMakeFiles/project5.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project5.dir/depend
 
