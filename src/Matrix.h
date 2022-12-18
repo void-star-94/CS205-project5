@@ -7,16 +7,6 @@
 
 #include "MatBase.h"
 
-template<typename T>
-struct scalar_trait<Matrix<T>> {
-    using type = T;
-};
-
-template<typename T>
-struct derived_trait {
-    using type = T;
-};
-
 template<typename T> requires Element_t<T>
 class Matrix : public MatBase<Matrix<T>> {
     using Scalar = T;
@@ -206,10 +196,7 @@ private:
 };
 
 
-template<typename T>
-struct scalar_trait<Matrix_View<T>> {
-    using type = T;
-};
+
 
 
 

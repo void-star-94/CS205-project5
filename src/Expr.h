@@ -8,10 +8,7 @@
 #include "MatBase.h"
 
 
-template<typename T, typename V>
-struct scalar_trait<UnaryOP<T, V>> {
-    using type = typename scalar_trait<T>::type;
-};
+
 
 
 template<typename Content, typename Functor>
@@ -43,10 +40,7 @@ private:
 };
 
 
-template<typename T, typename V, typename W>
-struct scalar_trait<BinaryOP<T, V, W>> {
-    using type = typename scalar_trait<T>::type;
-};
+
 
 template<typename LHS, typename RHS, typename Functor>
 class BinaryOP : public Base<BinaryOP<LHS, RHS, Functor>> {
@@ -83,10 +77,7 @@ private:
 };
 
 
-template<typename T, typename V>
-struct scalar_trait<ScalarOP_l<T, V>> {
-    using type = typename scalar_trait<T>::type;
-};
+
 
 template<typename Content, typename Functor>
 class ScalarOP_l : public Base<ScalarOP_l<Content, Functor>> {
@@ -118,10 +109,7 @@ private:
     Functor functor{};
 };
 
-template<typename T, typename V>
-struct scalar_trait<ScalarOP_r<T, V>> {
-    using type = typename scalar_trait<T>::type;
-};
+
 
 template<typename Content, typename Functor>
 class ScalarOP_r : public Base<ScalarOP_r<Content, Functor>> {

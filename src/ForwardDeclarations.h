@@ -52,6 +52,56 @@ class ScalarOP_l;
 template<typename Content, typename Functor>
 class ScalarOP_r;
 
+template<typename T>
+struct scalar_trait<Base<T>> {
+    using type = typename scalar_trait<T>::type;
+};
+
+template<typename T>
+struct scalar_trait<MatBase<T>> {
+    using type = typename scalar_trait<T>::type;
+};
+
+template<typename T>
+struct scalar_trait<Matrix_View<T>> {
+    using type = T;
+};
+
+template<typename T>
+struct scalar_trait<Matrix<T>> {
+    using type = T;
+};
+
+template<typename T, typename V>
+struct scalar_trait<UnaryOP<T, V>> {
+    using type = typename scalar_trait<T>::type;
+};
+
+template<typename T, typename V, typename W>
+struct scalar_trait<BinaryOP<T, V, W>> {
+    using type = typename scalar_trait<T>::type;
+};
+
+template<typename T, typename V>
+struct scalar_trait<ScalarOP_l<T, V>> {
+    using type = typename scalar_trait<T>::type;
+};
+
+template<typename T, typename V>
+struct scalar_trait<ScalarOP_r<T, V>> {
+    using type = typename scalar_trait<T>::type;
+};
+
+template<typename T>
+struct derived_trait<MatBase<T>> {
+    using type = T;
+};
+
+template<typename T>
+struct derived_trait {
+    using type = T;
+};
+
 #define unary_functor(name)  struct unary_functor_##name;
 
 #define binary_functor(name) struct binary_functor_##name;

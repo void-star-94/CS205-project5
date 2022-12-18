@@ -8,20 +8,7 @@
 #include <memory>
 #include "ForwardDeclarations.h"
 
-template<typename T>
-struct derived_trait<MatBase<T>> {
-    using type = T;
-};
 
-template<typename T>
-struct scalar_trait<Base<T>> {
-    using type = typename scalar_trait<T>::type;
-};
-
-template<typename T>
-struct scalar_trait<MatBase<T>> {
-    using type = typename scalar_trait<T>::type;
-};
 
 template<typename Derived>
 class Base {
@@ -39,12 +26,12 @@ public:
     inline Scalar operator[](Index i, Index j) const {
 //        std::cout << "base\n";
         return self.at(i, j);
-    };
+    }
 
     inline Scalar operator[](Index i) const {
 //        std::cout << "base\n";
         return self.at(i);
-    };
+    }
 
     [[nodiscard]] Index rows() const { return m_rows; }
 
@@ -77,25 +64,24 @@ template<typename Derived>
 class MatBase : public Base<MatBase<Derived>> {
 public:
     using Scalar = typename scalar_trait<Derived>::type;
-    using derived = typename derived_trait<Derived>::type;
 
     explicit MatBase(Index rows = 1, Index cols = 1) : Base<MatBase<Derived>>(rows, cols) {}
 
     inline Scalar &operator[](Index i, Index j) {
         return this->self.at(i, j);
-    };
+    }
 
     inline Scalar &operator[](Index i) {
         return this->self.at(i);
-    };
+    }
 
     inline Scalar operator[](Index i, Index j) const {
         return this->self.at(i, j);
-    };
+    }
 
     inline Scalar operator[](Index i) const {
         return this->self.at(i);
-    };
+    }
 
 };
 
