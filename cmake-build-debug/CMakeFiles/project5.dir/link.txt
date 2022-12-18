@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/project5.dir/src/main.cpp.o -o project5 

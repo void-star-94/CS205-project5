@@ -1,3 +1,0 @@
-/home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug/CMakeFiles/project5.dir
-/home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/zhzhzh/ClionProjects/CS205-project5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
