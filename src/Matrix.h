@@ -12,13 +12,18 @@ struct scalar_trait<Matrix<T>> {
     using type = T;
 };
 
+template<typename T>
+struct derived_trait {
+    using type = T;
+};
+
 template<typename T> requires Element_t<T>
 class Matrix : public MatBase<Matrix<T>> {
     using Scalar = T;
 public:
     explicit Matrix(uint64_t row = 1, uint64_t col = 1, Scalar fill = 0) : MatBase<Matrix<T>>(row, col) {
 #ifdef SHOW_CONSTRUCT
-        std::cout<<"construct!\n";
+        std::cout << "construct!\n";
 #endif
 
 #if CHECK_INPUT
@@ -38,7 +43,7 @@ public:
     Matrix(uint64_t row, uint64_t col, Scalar *data) : MatBase<Matrix<T>>(row, col),
                                                        m_data(std::unique_ptr<Scalar[]>(data)) {
 #ifdef SHOW_CONSTRUCT
-        std::cout<<"construct!\n";
+        std::cout << "construct!\n";
 #endif
     }
 
@@ -47,7 +52,7 @@ public:
     template<typename V>
     Matrix(const Base<V> &other) {/*NOLINT*/
 #ifdef SHOW_CONSTRUCT
-        std::cout<<"construct!\n";
+        std::cout << "construct!\n";
 #endif
         this->m_rows = other.rows();
         this->m_cols = other.cols();
@@ -206,6 +211,9 @@ struct scalar_trait<Matrix_View<T>> {
     using type = T;
 };
 
+
+
+
 template<typename T> requires Element_t<T>
 class Matrix_View : public MatBase<Matrix_View<T>> {
 public:
@@ -334,5 +342,6 @@ private:
     const Index m_rows_;
     const Index m_cols_;
 };
+
 
 #endif //PROJECT5_MATRIX_H

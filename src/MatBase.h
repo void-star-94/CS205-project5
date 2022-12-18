@@ -8,20 +8,19 @@
 #include <memory>
 #include "ForwardDeclarations.h"
 
-
 template<typename T>
-struct scalar_trait {
-    using type = typename T::Scalar;
-};
-
-template<typename T>
-struct derived_trait {
+struct derived_trait<MatBase<T>> {
     using type = T;
 };
 
 template<typename T>
-struct derived_trait<Base<T>> {
-    using type = typename T::derived;
+struct scalar_trait<Base<T>> {
+    using type = typename scalar_trait<T>::type;
+};
+
+template<typename T>
+struct scalar_trait<MatBase<T>> {
+    using type = typename scalar_trait<T>::type;
 };
 
 template<typename Derived>
@@ -55,7 +54,7 @@ public:
 protected:
     Index m_rows;
     Index m_cols;
-    derived &self = static_cast<Derived &>(*this);
+    derived &self = static_cast<derived &>(*this);
 };
 
 
@@ -70,18 +69,17 @@ std::ostream &operator<<(std::ostream &os, const Base<Derived> &matrix) {
     return os;
 }
 
-template<typename T>
-struct derived_trait<MatBase<T>> {
-    using type = typename T::derived;
-};
+
+
+
 
 template<typename Derived>
-class MatBase : public Base<Derived> {
+class MatBase : public Base<MatBase<Derived>> {
 public:
     using Scalar = typename scalar_trait<Derived>::type;
     using derived = typename derived_trait<Derived>::type;
 
-    explicit MatBase(Index rows = 1, Index cols = 1) : Base<Derived>(rows, cols) {}
+    explicit MatBase(Index rows = 1, Index cols = 1) : Base<MatBase<Derived>>(rows, cols) {}
 
     inline Scalar &operator[](Index i, Index j) {
         return this->self.at(i, j);

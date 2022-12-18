@@ -188,6 +188,7 @@ CMakeFiles/project5.dir/src/main.cpp.o: /home/zhzhzh/ClionProjects/CS205-project
   /usr/local/include/c++/13.0.0/bits/ostream.tcc \
   /usr/local/include/c++/13.0.0/istream \
   /usr/local/include/c++/13.0.0/bits/istream.tcc \
+  /home/zhzhzh/ClionProjects/CS205-project5/src/Wrapper.h \
   /home/zhzhzh/ClionProjects/CS205-project5/src/Matrix.h \
   /home/zhzhzh/ClionProjects/CS205-project5/src/MatBase.h \
   /usr/local/include/c++/13.0.0/memory \
@@ -695,6 +696,8 @@ CMakeFiles/project5.dir/src/main.cpp.o: /home/zhzhzh/ClionProjects/CS205-project
 /usr/local/include/c++/13.0.0/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/local/include/c++/13.0.0/bits/basic_ios.tcc:
+
+/home/zhzhzh/ClionProjects/CS205-project5/src/Wrapper.h:
 
 /usr/local/include/c++/13.0.0/cstdio:
 
