@@ -1,10 +1,6 @@
 #include <iostream>
 #define SHOW_CONSTRUCT
-#include "Matrix.h"
-#include "Functors.h"
-#include "functions.h"
-
-#include "Expr.h"
+#include "Wrapper.h"
 
 #define tester(name, func) void test_##name(){ \
     std::cout<<"------------------------\n";    \

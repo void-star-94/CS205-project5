@@ -96,13 +96,10 @@
 		<Unit filename="/home/zhzhzh/ClionProjects/CS205-project5/src/MatBase.h">
 			<Option target="project5"/>
 		</Unit>
-		<Unit filename="/home/zhzhzh/ClionProjects/CS205-project5/src/Matmul.h">
-			<Option target="project5"/>
-		</Unit>
-		<Unit filename="/home/zhzhzh/ClionProjects/CS205-project5/src/Matmul_Wrapper.h">
-			<Option target="project5"/>
-		</Unit>
 		<Unit filename="/home/zhzhzh/ClionProjects/CS205-project5/src/Matrix.h">
+			<Option target="project5"/>
+		</Unit>
+		<Unit filename="/home/zhzhzh/ClionProjects/CS205-project5/src/Wrapper.h">
 			<Option target="project5"/>
 		</Unit>
 		<Unit filename="/home/zhzhzh/ClionProjects/CS205-project5/src/functions.h">
